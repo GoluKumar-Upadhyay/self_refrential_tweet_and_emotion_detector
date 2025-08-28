@@ -1,0 +1,9 @@
+# Ignore large models
+model/
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.data-00000-of-00001
+*.index
+*.ckpt
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
