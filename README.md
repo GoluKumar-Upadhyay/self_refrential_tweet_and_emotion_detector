@@ -106,7 +106,11 @@ This project demonstrates **NLP**, **Deep Learning**, and **Web Development** sk
 
 
 
-https://github.com/user-attachments/assets/fe625598-0a65-4b84-b581-3f719a7b66a7
+
+
+https://github.com/user-attachments/assets/ef7a4ba2-ca82-4509-ae71-5eee0e9006a3
+
+
 
 ----
 
