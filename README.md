@@ -82,6 +82,39 @@ This project demonstrates **NLP**, **Deep Learning**, and **Web Development** sk
 
 ---
 
+
+1. **Load Tools**  
+   - `nltk`, `spaCy`, `SBERT (Sentence Transformers)`  
+   - `MinHash / LSH (datasketch)`  
+   - `SymSpell` (spelling correction)  
+   - `scikit-learn`, `langdetect`, `regex`, etc.
+
+2. **Preprocessing Utilities**  
+   - `clean_text`: Normalize, tokenize, remove stopwords, lemmatize.  
+   - `generate_ngrams`: Extract n-grams for hashing & similarity.  
+   - `MinHash helpers`: Build MinHash signatures for clustering.
+
+3. **Explicit Detection**  
+   - `find_explicit_tweets()`: Regex-based detection of **self-pronouns** (I, me, myself, etc.).
+
+4. **Clustering Explicit Tweets**  
+   - `cluster_tweets()`: Groups explicit tweets using **MinHash LSH** on n-grams.
+
+5. **Merge Clusters**  
+   - `merge_similar_clusters()`: Merges clusters via **SBERT embeddings + cosine similarity**.
+
+6. **Implicit Detection**  
+   - `find_implicit_tweets()`: Finds **semantically related tweets** to explicit clusters using  
+     - SBERT similarity  
+     - Jaccard overlap  
+     - Sarcasm cues
+
+7. **Final Self-Tweets**  
+   - Union of **explicit texts** (from merged clusters) + **implicit candidates**  
+   - Output → `self_tweets`
+
+---
+
 ## 🖥️ Demo
 
 | Input Tweet | Prediction |
